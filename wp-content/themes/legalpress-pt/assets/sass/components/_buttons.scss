@@ -1,0 +1,25 @@
+/* 05.13. Buttons */
+.btn {
+	font-size: 13px;
+	padding: 18px 25px;
+	border-width: 2px;
+	border-radius: 2px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	transition: $primary-transition;
+}
+
+.btn-primary {
+	background: linear-gradient(to bottom, $primary-color 0%, darken($primary-color, 1) 100%);
+	border-color: $primary-color;
+
+	&:hover {
+		background: darken($primary-color, 8);
+		border-color: darken($primary-color, 8);
+	}
+}
+
+.btn-default {
+	&:hover {
+		border-color: rgba(250, 250, 250, .5);
+	}
+}

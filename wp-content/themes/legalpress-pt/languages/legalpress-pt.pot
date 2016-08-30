@@ -1,0 +1,381 @@
+# Copyright (C) 2016 ProteusThemes 
+# This file is distributed under the GPL 2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: LegalPress by ProteusThemes 1.1.2\n"
+"Report-Msgid-Bugs-To: http://support.proteusthemes.com/\n"
+"POT-Creation-Date: 2015-07-30 08:52:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: 404.php:17
+msgid "404 Picture"
+msgstr ""
+
+#: 404.php:19
+msgid "The page you were looking for is not here."
+msgstr ""
+
+#: 404.php:24
+#. translators: %s represents link to home page wrap around the Home word
+msgid "Go %s Home %s or try to search:"
+msgstr ""
+
+#: comments.php:21
+msgid "Comment Navigation"
+msgstr ""
+
+#: comments.php:22
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:23
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:32 comments.php:87
+msgid "Comments for this post are closed."
+msgstr ""
+
+#: comments.php:43
+msgid "Write a Comment"
+msgstr ""
+
+#: comments.php:54
+msgid "First and Last name"
+msgstr ""
+
+#: comments.php:60
+msgid "E-mail Address"
+msgstr ""
+
+#: comments.php:66
+msgid "Website"
+msgstr ""
+
+#: inc/helpers.php:36
+#. translators: %s represents a number
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/helpers.php:220
+msgid "Edit"
+msgstr ""
+
+#: inc/helpers.php:224
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:39 inc/widgets/widget-call-to-action.php:11
+msgid "Call to Action"
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:41
+msgid "Content"
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:47
+msgid "Title"
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:53
+msgid "Subtitle"
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:59
+msgid "Button Area"
+msgstr ""
+
+#: inc/theme-vc-call-to-action.php:61
+msgid ""
+"For adding buttons you must use button shortcode which look like this: "
+"[button]Text[/button]. Please take a look at the documentation for more "
+"details."
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:69
+msgid "George Hilton"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:75
+msgid "CEO"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:87
+msgid ""
+"I'm a London based lawyer and I was born and raised in Manchester. I "
+"completed my Masters in Law. I'm the CEO of this firm."
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:12
+msgid "Call to Action widget for Page Builder."
+msgstr ""
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search ..."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "LegalPress by ProteusThemes"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://demo.proteusthemes.com/legalpress/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "LegalPress WordPress Theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ProteusThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.proteusthemes.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Layer/Revolution Slider"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Front Page With Slider"
+msgstr ""
+
+#: comments.php:76
+msgctxt "noun"
+msgid "Your comment"
+msgstr ""
+
+#: functions.php:82
+msgctxt "backend"
+msgid "Main Menu"
+msgstr ""
+
+#: inc/documentation-link.php:9 inc/documentation-link.php:10
+#: inc/documentation-link.php:21
+msgctxt "backend"
+msgid "Documentation"
+msgstr ""
+
+#: inc/documentation-link.php:24
+msgctxt "backend"
+msgid "Click here to see online documentation of the theme!"
+msgstr ""
+
+#: inc/filters.php:253
+msgctxt "backend"
+msgid "Widget Style"
+msgstr ""
+
+#: inc/filters.php:255
+msgctxt "backend"
+msgid "Set a box around the widget"
+msgstr ""
+
+#: inc/filters.php:261
+msgctxt "backend"
+msgid "Widget Title"
+msgstr ""
+
+#: inc/filters.php:263
+msgctxt "backend"
+msgid "Exposed title (bigger font, thin line)"
+msgstr ""
+
+#: inc/theme-sidebars.php:12
+msgctxt "backend"
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:14
+msgctxt "backend"
+msgid "Sidebar on the blog layout."
+msgstr ""
+
+#: inc/theme-sidebars.php:26
+msgctxt "backend"
+msgid "Regular Page Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:28
+msgctxt "backend"
+msgid "Sidebar on the regular page."
+msgstr ""
+
+#: inc/theme-sidebars.php:41
+msgctxt "backend"
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/theme-sidebars.php:43
+msgctxt "backend"
+msgid "Sidebar for the shop page"
+msgstr ""
+
+#: inc/theme-sidebars.php:57
+msgctxt "backend"
+msgid "Header Left"
+msgstr ""
+
+#: inc/theme-sidebars.php:59
+msgctxt "backend"
+msgid "Header area for left side of the header."
+msgstr ""
+
+#: inc/theme-sidebars.php:69
+msgctxt "backend"
+msgid "Header Right"
+msgstr ""
+
+#: inc/theme-sidebars.php:71
+msgctxt "backend"
+msgid "Header area for right side of the header."
+msgstr ""
+
+#: inc/theme-sidebars.php:80
+msgctxt "backend"
+msgid "Top"
+msgstr ""
+
+#: inc/theme-sidebars.php:82
+msgctxt "backend"
+msgid "Top area for Icon Box and Social Icons widgets."
+msgstr ""
+
+#: inc/theme-sidebars.php:95
+msgctxt "backend"
+msgid "Footer"
+msgstr ""
+
+#: inc/theme-sidebars.php:97
+msgctxt "backend"
+msgid ""
+"Footer area works best with %d widgets. This number can be changed in the "
+"Appearance &rarr; Customize &rarr; Theme Options &rarr; Footer."
+msgstr ""
+
+#: inc/theme-vc-home-page-template.php:11
+msgctxt "backend"
+msgid "LegalPress: Front Page"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:59
+msgctxt "backend"
+msgid "Person Profile"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:61
+msgctxt "backend"
+msgid "Content"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:67
+msgctxt "backend"
+msgid "Name"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:73
+msgctxt "backend"
+msgid "Title"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:79
+msgctxt "backend"
+msgid "Picture URL"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:85
+msgctxt "backend"
+msgid "Introduction"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:91
+msgctxt "backend"
+msgid "Open link in new tab"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:96
+msgctxt "backend"
+msgid "Social icons"
+msgstr ""
+
+#: inc/theme-vc-person-profile.php:97
+msgctxt "backend"
+msgid ""
+"Enter values for social links - <em>URL</em>|<em>font awesome icon class "
+"name</em>. Divide value sets with linebreak \"Enter\" (Example: "
+"https://www.facebook.com/ProteusThemes|fa-facebook-square)."
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:82
+msgctxt "backend"
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:86
+msgctxt "backend"
+msgid "Subtitle:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:90
+msgctxt "backend"
+msgid "Button Area:"
+msgstr ""
+
+#: inc/widgets/widget-call-to-action.php:93
+msgctxt "backend"
+msgid ""
+"Input a button shortcode in the above field. Please take a look at the <a "
+"href=\"%1$s\" target=\"_blank\">Buttons Shortcode documentation</a> to "
+"learn more on how to write button shortcodes."
+msgstr ""
+
+#: inc/filters.php:85
+msgctxt "custom read more text after the post excerpts"
+msgid " &hellip;"
+msgstr ""
+
+#: inc/filters.php:216
+#. translators: If there are characters in your language that are not supported
+#. by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/helpers.php:95
+#. translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr ""
+
+#: inc/helpers.php:214
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""

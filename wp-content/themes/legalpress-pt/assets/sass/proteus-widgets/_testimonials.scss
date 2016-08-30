@@ -1,0 +1,101 @@
+/* 05.16. Testimonials */
+.testimonial {
+	&__quote {
+		position: relative;
+		background: #ffffff;
+		box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+		padding: 40px;
+		margin-bottom: 30px;
+		text-align: center;
+		font-size: 16px;
+		font-style: italic;
+		margin-top: 40px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: -20px;
+			left: calc(50% - 15px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 15px 0;
+			border-color: #ffffff transparent transparent;
+		}
+	}
+
+	&__author {
+		font-size: 18px;
+		color: $headings-color;
+		font-style: normal;
+		font-weight: bold;
+		font-family: $secondary-font;
+		text-align: center;
+		display: block;
+	}
+
+	&__author-description {
+		color: $primary-color;
+		font-family: $primary-font;
+		font-weight: bold;
+		font-size: 14px;
+		display: block;
+	}
+
+	blockquote {
+		padding: 0;
+		margin: 0;
+		border-left: 0;
+	}
+
+	.widget-title {
+		float: left;
+		width: calc(100% - 130px);
+		margin-bottom: 9px;
+
+		@media (min-width: $screen-md-min) {
+			width: calc(100% - 170px);
+		}
+	}
+
+	&__carousel {
+		float: right;
+		margin-top: -5px;
+	}
+
+	&__carousel--left,
+	&__carousel--right {
+		display: inline-block;
+		color: #ffffff;
+		background-color: $secondary-color;
+		border: 5px solid $secondary-color;
+		box-shadow: 0 0 0 1px rgba(250, 250, 250, .2) inset;
+		text-align: center;
+		margin-left: 7px;
+		transition: $primary-transition;
+		width: 40px;
+		height: 40px;
+		line-height: 30px;
+
+		@media (min-width: $screen-md-min) {
+			width: 60px;
+			height: 60px;
+			line-height: 50px;
+		}
+
+		&:hover {
+			box-shadow: 0 0 0 1px rgba(250, 250, 250, .6) inset;
+			color: #ffffff;
+		}
+
+		&:focus,
+		&:visited {
+			color: #ffffff;
+		}
+	}
+
+	.carousel {
+		position: inherit;
+		clear: both;
+	}
+}

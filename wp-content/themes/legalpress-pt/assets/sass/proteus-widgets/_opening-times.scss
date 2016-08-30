@@ -1,0 +1,32 @@
+/* 05.22. Opening Times */
+.time-table {
+	.week-day {
+		position: relative;
+		clear: both;
+		padding: 5px 0;
+
+		dt {
+			position: relative;
+			z-index: 2;
+			float: left;
+			padding-right: 10px;
+			font-weight: normal;
+		}
+
+		dd {
+			position: relative;
+			z-index: 2;
+			float: right;
+			padding-left: 10px;
+		}
+
+		&.today {
+			color: $headings-color;
+
+			dt,
+			dd {
+				font-weight: bold;
+			}
+		}
+	}
+}

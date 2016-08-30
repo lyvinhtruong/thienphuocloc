@@ -1,0 +1,41 @@
+/* 05.25. Number Counter */
+.number-counter {
+	text-align: center;
+	margin-top: -21px;
+
+	@media (min-width: $screen-md-min) {
+		margin-top: 0;
+
+		h2 {
+			margin-top: 8px;
+			margin-bottom: 5px;
+		}
+	}
+
+	&__item {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			background-color: #eeeeee;
+			height: 1px;
+			width: 100%;
+			bottom: -10px;
+			right: 0;
+
+			@media (min-width: $screen-md-min) {
+				right: -20px;
+				top: -38px;
+				height: calc(100% + 68px);
+				width: 1px;
+			}
+		}
+	}
+
+	&--last {
+		&::after {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+/* 05.01. Top Bar */
+.top {
+	background-color: $light-color;
+	border-bottom: 1px solid #eeeeee;
+	font-size: 13px;
+	padding: 14px 0;
+
+	&__tagline {
+		@media (min-width: $screen-md-min) {
+			float: left;
+		}
+	}
+
+	&__widgets {
+		@media (min-width: $screen-md-min) {
+			float: right;
+		}
+	}
+
+	.widget {
+		position: relative;
+		padding-top: 10px;
+		margin-top: 10px;
+		border-top: 1px solid rgba(0, 0, 0, .06);
+
+		@media (min-width: $screen-md-min) {
+			padding-right: 20px;
+			margin-right: 20px;
+			padding-top: 0;
+			margin-top: 0;
+			border-top: 0;
+			display: inline-block;
+		}
+
+		&::after {
+			@media (min-width: $screen-md-min) {
+				position: absolute;
+				content: '';
+				background-color: rgba(0, 0, 0, .06);
+				width: 1px;
+				height: 50px;
+				right: 0;
+				top: -15px;
+			}
+		}
+
+		&:last-child {
+			@media (min-width: $screen-md-min) {
+				padding-right: 0;
+				margin-right: 0;
+			}
+
+			&::after {
+				@media (min-width: $screen-md-min) {
+					display: none;
+				}
+			}
+		}
+	}
+}

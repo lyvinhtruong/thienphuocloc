@@ -1,0 +1,149 @@
+/* 05.14. Icon Box */
+.icon-box {
+	display: inline-block;
+	color: $text-color;
+	transition: $primary-transition;
+
+	.fa {
+		font-size: 20px;
+		margin-right: 10px;
+		transition: $primary-transition;
+	}
+
+	&__title {
+		font-size: 18px;
+		margin: 6px 0;
+		transition: $primary-transition;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $text-color;
+	}
+}
+
+.entry-content {
+	.icon-box {
+		position: relative;
+		background: linear-gradient(to right, #fdfdfd 0%, #ffffff 10%);
+		border: 1px solid rgba(0, 0, 0, .08);
+		padding: 20px;
+		width: 100%;
+
+		&::after {
+			position: absolute;
+			content: '';
+			z-index: 0;
+			height: 100%;
+			width: 1px;
+			background-color: rgba(0, 0, 0, .08);
+			top: 0;
+			left: 40px;
+		}
+
+		.fa {
+			position: relative;
+			z-index: 1;
+			float: left;
+			background-color: $primary-color;
+			color: #ffffff;
+			height: 40px;
+			width: 40px;
+			margin-top: 15px;
+			padding: 10px;
+		}
+
+		&__title {
+			margin: 2px 0 6px;
+		}
+
+		&__text {
+			margin-left: 60px;
+		}
+
+		&:hover {
+			border: 1px solid $primary-color;
+		}
+	}
+}
+
+.top {
+	.icon-box {
+		.fa {
+			font-size: 21px;
+			padding: 0;
+			margin-right: 6px;
+			margin-top: 0;
+			vertical-align: middle;
+			line-height: 0;
+			color: $text-color;
+		}
+
+		&__text {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		&__subtitle,
+		&__title {
+			display: inline-block;
+			font-size: 13px;
+			font-family: $primary-font;
+			font-weight: normal;
+			color: $text-color;
+			margin: 0;
+		}
+	}
+
+	// scss-lint:disable QualifyingElement
+	a.icon-box {
+	// scss-lint:enable QualifyingElement
+
+		&:hover {
+			.fa,
+			.icon-box__title,
+			.icon-box__subtitle {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.header {
+	.icon-box {
+		.fa {
+			float: left;
+			padding: 0;
+			font-size: 40px;
+			color: #dddddd;
+			background-color: transparent;
+			margin-right: 5px;
+			margin-top: 0;
+		}
+
+		.fa-phone-square {
+			margin-top: -3px;
+		}
+
+		&__text {
+			margin-left: 45px;
+		}
+
+		&__title {
+			margin: 0;
+			font-size: 15px;
+			font-family: $primary-font;
+			color: #777777;
+		}
+
+		&:hover {
+			.fa {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.widget-icon-box {
+		margin-top: 10px;
+	}
+}

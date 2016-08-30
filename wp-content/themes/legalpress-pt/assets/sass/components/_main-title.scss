@@ -1,0 +1,43 @@
+/* 05.03. Main Title */
+.main-title {
+	background: url('assets/images/pattern-background.png');
+	padding: 40px 0;
+	margin-bottom: 30px;
+	text-align: center;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+
+	@media (min-width: $screen-md-min) {
+		padding: 121px 0 80px;
+	}
+
+	&__primary {
+		font-size: 40px;
+		color: #333333;
+		margin: 0;
+
+		@media (min-width: $screen-md-min) {
+			font-size: 60px;
+		}
+	}
+
+	&__secondary {
+		font-family: $primary-font;
+		font-size: 16px;
+		color: $text-color;
+		margin: 10px 0 7px;
+		font-weight: normal;
+	}
+
+	&--small {
+		padding: 20px 0 15px;
+
+		@media (min-width: $screen-md-min) {
+			padding: 70px 0 15px;
+		}
+
+		.main-title__primary {
+			font-size: 36px;
+		}
+	}
+}

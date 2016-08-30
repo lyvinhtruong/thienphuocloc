@@ -1,0 +1,363 @@
+/* 05.08. Main Navigation */
+.main-navigation {
+	background-color: $secondary-color;
+	border: 5px solid $secondary-color;
+	box-shadow: 0 0 0 1px rgba(250, 250, 250, .2) inset;
+	list-style: none;
+	padding: 0;
+	font-weight: bold;
+
+	@media (min-width: $screen-md-min) {
+		margin-top: 25px;
+		text-align: center;
+		font-size: 0;
+	}
+
+	> li {
+		position: relative;
+
+		@media (min-width: $screen-md-min) {
+			display: inline-block;
+			font-size: 14px;
+		}
+
+		// Main link style.
+		> a {
+			position: relative;
+			font-family: $secondary-font;
+			display: block;
+			font-size: 19px;
+			padding: 20px;
+			border-bottom: 1px solid rgba(250, 250, 250, .2);
+			color: #ffffff;
+
+			@media (min-width: $screen-md-min) {
+				padding: 30.5px 30px;
+				border-bottom: 0;
+			}
+
+			// Separator between main links.
+			&::before {
+				@media (min-width: $screen-md-min) {
+					position: absolute;
+					content: '~';
+					right: -5px;
+					line-height: 0;
+					top: 50%;
+					color: rgba(250, 250, 250, .2);
+				}
+			}
+		}
+
+		// Don't display last separator.
+		&:last-of-type {
+			> a {
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		&:hover,
+		&:focus,
+		&[aria-expanded="true"] {
+			> a {
+				text-decoration: none;
+				color: $primary-color;
+
+				@media (min-width: $screen-md-min) {
+					color: #ffffff;
+				}
+
+				// Line under the links on hover.
+				&::after {
+					@media (min-width: $screen-md-min) {
+						position: absolute;
+						content: '';
+						width: calc(100% - 60px);
+						height: 5px;
+						left: 30px;
+						bottom: 0;
+						background-color: #ffffff;
+					}
+				}
+			}
+
+			> .sub-menu {
+				left: 12px;
+			}
+		}
+	}
+
+	// Active current link.
+	> .current-menu-item {
+		> a {
+			color: $primary-color;
+
+			&:hover {
+				color: $primary-color;
+
+				&::after {
+					@media (min-width: $screen-md-min) {
+						background-color: $primary-color;
+					}
+				}
+			}
+
+			// Line under the links for active current link.
+			&::after {
+				@media (min-width: $screen-md-min) {
+					position: absolute;
+					content: '';
+					width: calc(100% - 60px);
+					height: 5px;
+					left: 30px;
+					bottom: 0;
+					background-color: $primary-color;
+				}
+			}
+		}
+
+		// Active current links with sub-menus.
+		&.menu-item-has-children {
+			> a {
+				&:hover {
+					// Line under the links for active current link.
+					&::after {
+						@media (min-width: $screen-md-min) {
+							display: block;
+						}
+					}
+				}
+			}
+
+			// Indicator for sub-menus.
+			&::after {
+				display: none;
+			}
+
+			&:hover {
+				// Different hover for links with sub-menus.
+				> a {
+					// Display line under the main links with sub-menus.
+					&::after {
+						@media (min-width: $screen-md-min) {
+							display: block;
+							background-color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Item with children.
+	.menu-item-has-children {
+		> a {
+			&:hover {
+				// Line under the links for active current link.
+				&::after {
+					@media (min-width: $screen-md-min) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		// Indicator for sub-menus.
+		&::after {
+			@media (min-width: $screen-md-min) {
+				position: absolute;
+				content: '\f0d7';
+				font-family: 'FontAwesome';
+				font-size: 12px;
+				bottom: 12px;
+				left: calc(50% - 2px);
+				color: #ffffff;
+			}
+		}
+
+		&:hover {
+			// Different hover for links with sub-menus.
+			> a {
+				// Don't display line under the main links with sub-menus.
+				&::after {
+					@media (min-width: $screen-md-min) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	// Sub-menu items.
+	.sub-menu {
+		list-style: none;
+		cursor: pointer;
+		padding: 0 1px;
+
+		@media (min-width: $screen-md-min) {
+			border-top: 5px solid $secondary-color;
+			position: absolute;
+			left: -9999em;
+			z-index: 9999;
+			padding: 0;
+		}
+
+		> li {
+			position: relative;
+
+			&:first-of-type {
+				@media (min-width: $screen-md-min) {
+					border-top: 2px solid darken($primary-color, 6);
+				}
+			}
+
+			> a {
+				text-align: left;
+				display: block;
+				padding: 12px 38px 12px 18px;
+				color: #ffffff;
+				background-color: lighten($secondary-color, 8);
+
+				@media (min-width: $screen-md-min) {
+					background-color: $primary-color;
+					border-bottom: 1px solid darken($primary-color, 6);
+					min-width: 150px;
+					white-space: nowrap;
+				}
+
+				&:hover {
+					text-decoration: none;
+					color: $primary-color;
+
+					@media (min-width: $screen-md-min) {
+						background-color: darken($primary-color, 6);
+						color: #ffffff;
+					}
+				}
+			}
+
+			&:hover,
+			&:focus,
+			&[aria-expanded="true"] {
+				> .sub-menu {
+					left: 100%;
+				}
+			}
+		}
+
+		// scss-lint:disable MergeableSelector
+
+		// scss-lint:disable SelectorDepth
+
+		.sub-menu {
+			margin-top: 0;
+			top: 0;
+			margin-left: 0;
+			border-top: 0;
+			padding: 0;
+
+			@media (min-width: $screen-md-min) {
+				padding-left: 0;
+			}
+
+			> li {
+				border-top: 0;
+
+				> a {
+					padding-left: 28px;
+
+					@media (min-width: $screen-md-min) {
+						border-left: 1px solid darken($primary-color, 6);
+						padding-left: 18px;
+					}
+				}
+			}
+		}
+
+		.sub-menu .sub-menu a {
+			padding-left: 38px;
+
+			@media (min-width: $screen-md-min) {
+				padding-left: 18px;
+			}
+		}
+
+		.sub-menu .sub-menu .sub-menu a {
+			padding-left: 48px;
+
+			@media (min-width: $screen-md-min) {
+				padding-left: 18px;
+			}
+		}
+
+		.sub-menu .sub-menu .sub-menu .sub-menu a {
+			padding-left: 58px;
+
+			@media (min-width: $screen-md-min) {
+				padding-left: 18px;
+			}
+		}
+
+		.menu-item-has-children {
+			position: relative;
+
+			&::after {
+				@media (min-width: $screen-md-min) {
+					position: absolute;
+					content: '\f0da';
+					font-family: 'FontAwesome';
+					font-size: 12px;
+					right: 15px;
+					top: calc(50% - 10px);
+					color: rgba(0, 0, 0, .08);
+				}
+			}
+		}
+	}
+}
+
+.navbar-collapse {
+	padding: 0;
+}
+
+// Mobile Toggle Navigation
+.navbar-toggle {
+	background-color: $primary-color;
+	border-radius: 2px;
+	padding: 10px 12px;
+	margin: 10px 0;
+	transition: $primary-transition;
+
+	@media (min-width: $screen-xs-min) {
+		margin: 18px 0;
+	}
+
+	&:hover {
+		background-color: darken($primary-color, 6);
+	}
+
+	.icon-bar {
+		background-color: #ffffff;
+		width: 18px;
+		height: 3px;
+
+		+ .icon-bar {
+			margin-top: 3px;
+		}
+	}
+
+	&__text {
+		font-weight: bold;
+		color: #ffffff;
+		display: inline-block;
+		padding: 0 10px 0 0;
+	}
+
+	&__icon-bar {
+		vertical-align: middle;
+		display: inline-block;
+		height: 18px;
+	}
+}

@@ -1,0 +1,25 @@
+/* 05.09. Meta Data */
+.meta-data {
+	padding: 16px 0;
+	font-weight: bold;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #eeeeee;
+
+	a {
+		color: $text-color;
+	}
+
+	&__separator {
+		margin: 0 10px;
+		font-size: 18px;
+		font-weight: normal;
+	}
+
+	.single & {
+		margin-bottom: 27px;
+	}
+
+	.sticky & {
+		padding: 16px 40px;
+	}
+}

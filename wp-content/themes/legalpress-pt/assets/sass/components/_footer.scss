@@ -1,0 +1,74 @@
+/* 05.06. Footer */
+.footer {
+	&-top {
+		background-color: $secondary-color;
+		padding: 40px 0;
+		color: #b2b1b5;
+		background-position: center;
+		background-size: cover;
+
+		@media (min-width: $screen-md-min) {
+			padding: 70px 0 80px;
+		}
+
+		&__headings {
+			color: #ffffff;
+			font-size: 24px;
+			margin-top: 0;
+			margin-bottom: 24px;
+		}
+	}
+
+	&-bottom {
+		background-color: #393640;
+		padding: 15px 0;
+		text-align: center;
+
+		@media (min-width: $screen-md-min) {
+			padding: 29px 0 19px;
+		}
+
+		a {
+			color: #ffffff;
+			font-weight: bold;
+		}
+
+		&__left {
+			@media (min-width: $screen-md-min) {
+				float: left;
+			}
+		}
+
+		&__center {
+			padding-top: 5px;
+
+			@media (min-width: $screen-md-min) {
+				padding-top: 0;
+			}
+
+			.fa {
+				@media (min-width: $screen-md-min) {
+					margin-top: -10px;
+				}
+			}
+		}
+
+		&__right {
+			padding-top: 5px;
+
+			@media (min-width: $screen-md-min) {
+				float: right;
+				padding-top: 0;
+			}
+		}
+	}
+
+	.icon-container {
+		color: #b2b1b5;
+		font-size: 24px;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}

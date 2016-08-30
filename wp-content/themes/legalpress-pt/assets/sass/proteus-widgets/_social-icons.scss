@@ -1,0 +1,16 @@
+/* 05.15. Social Icons */
+.social-icons__link {
+	color: $text-color;
+
+	&:last-of-type {
+		.fa {
+			margin-right: 0;
+		}
+	}
+
+	.fa {
+		font-size: 21px;
+		vertical-align: middle;
+		margin-right: 1px;
+	}
+}

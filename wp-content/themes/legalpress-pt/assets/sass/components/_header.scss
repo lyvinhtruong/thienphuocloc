@@ -1,0 +1,137 @@
+/* 05.02. Header */
+.header {
+	position: relative;
+	z-index: 210;
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 25px;
+	margin-bottom: 20px;
+
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+
+	&__left-widgets,
+	&__right-widgets {
+		width: 100%;
+
+		@media (min-width: $screen-md-min) {
+			padding: 25px 0;
+			display: flex;
+			width: 35%;
+		}
+	}
+
+	&__left-widgets {
+		order: 3;
+
+		@media (min-width: $screen-md-min) {
+			order: 1;
+			justify-content: flex-start;
+		}
+	}
+
+	&__right-widgets {
+		order: 4;
+
+		@media (min-width: $screen-md-min) {
+			order: 3;
+			justify-content: flex-end;
+		}
+	}
+
+	&__logo {
+		order: 1;
+		width: 100%;
+		margin-bottom: 20px;
+
+		@media (min-width: $screen-md-min) {
+			order: 2;
+			width: 30%;
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		h1 {
+			margin: 35px 0;
+		}
+
+		img {
+			display: inline-block;
+			width: 60%;
+
+			@media (min-width: $screen-xs-min) {
+				width: auto;
+			}
+		}
+	}
+
+	&__navigation {
+		order: 2;
+		width: 100%;
+
+		@media (min-width: $screen-md-min) {
+			order: 4;
+			margin-bottom: -61px;
+		}
+	}
+
+	.widget {
+		position: relative;
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid rgba(0, 0, 0, .06);
+
+		@media (min-width: $screen-md-min) {
+			float: left;
+			padding-top: 0;
+			padding-right: 20px;
+			margin-top: 0;
+			margin-right: 20px;
+			border-top: 0;
+			display: inline-block;
+		}
+
+		&::after {
+			@media (min-width: $screen-md-min) {
+				position: absolute;
+				content: '';
+				background-color: rgba(0, 0, 0, .06);
+				height: 40px;
+				width: 1px;
+				top: 0;
+				right: 0;
+			}
+		}
+
+		&:last-child {
+			@media (min-width: $screen-md-min) {
+				padding-right: 0;
+				margin-right: 0;
+			}
+
+			&::after {
+				@media (min-width: $screen-md-min) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// scss-lint:disable SelectorFormat
+
+// Header with logo on left side
+.header--left-logo {
+	.header__logo {
+		@media (min-width: $screen-md-min) {
+			text-align: left;
+		}
+	}
+
+	.header__right-widgets {
+		@media (min-width: $screen-md-min) {
+			width: 70%;
+		}
+	}
+}

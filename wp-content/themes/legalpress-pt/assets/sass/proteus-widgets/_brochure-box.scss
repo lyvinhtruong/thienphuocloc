@@ -1,0 +1,63 @@
+/* 05.24. Brochure Box */
+.brochure-box {
+	position: relative;
+	background-color: #eeeeee;
+	border-radius: 2px;
+	padding-top: 5px;
+	display: block;
+	transition: $primary-transition;
+
+	.fa {
+		transition: $primary-transition;
+		display: inline-block;
+		margin: 2px;
+		padding: 5px 10px 10px;
+		vertical-align: middle;
+		font-size: 24px;
+		color: $text-color;
+	}
+
+	&::after {
+		transition: $primary-transition;
+		position: absolute;
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 5px 5px 0;
+		border-color: $text-color transparent transparent;
+		right: 15px;
+		top: calc(50% - 4px);
+	}
+
+	&:hover {
+		text-decoration: none;
+
+		.fa {
+			color: $headings-color;
+		}
+
+		&::after {
+			border-color: $headings-color transparent transparent;
+		}
+
+		.brochure-box__text {
+			color: $headings-color;
+		}
+	}
+
+	&__text {
+		font-family: $primary-font;
+		transition: $primary-transition;
+		display: inline-block;
+		color: $text-color;
+		font-weight: bold;
+		font-size: 13px;
+	}
+}
+
+// scss-lint:disable SelectorFormat
+
+.widget-brochure-box + .widget-brochure-box {
+	margin-top: -35px;
+}

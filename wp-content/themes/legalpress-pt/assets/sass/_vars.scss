@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    Local variables
+\*------------------------------------*/
+
+// Brand colors
+// -------------------------
+//** Global text color on `<body>`.
+$primary-color: #ccb68d;
+$secondary-color: #45414d;
+
+$light-color: #f7f7f7;
+
+$brand-primary: $primary-color;
+$brand-success: #4f9b4b;
+$brand-info: $secondary-color;
+$brand-warning: #cd9140;
+$brand-danger: #b94641;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Global text color on `<body>`.
+$text-color: #999999;
+
+//** Global textual link color.
+$link-color: $brand-primary;
+
+// Transitions
+// -------------------------
+$primary-transition: all 100ms ease-out;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$primary-font: "Roboto", Helvetica, Arial, sans-serif;
+$secondary-font: "Alegreya", Georgia, "Times New Roman", Times, serif;
+
+$font-family-sans-serif: $primary-font;
+$font-family-serif: $secondary-font;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.57;
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family: $secondary-font;
+$headings-font-weight: bold;
+$headings-color: #45423d;
+
+// Grid system
+// -------------------------
+
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint: 992px;
+
+// font Awesome path
+$fa-font-path: 'bower_components/font-awesome/fonts';
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 40px;
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight: bold;
+
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: $brand-primary;
+
+$btn-danger-bg: $brand-danger;
+$btn-danger-border: $brand-danger;
+
+$btn-success-bg: $brand-success;
+$btn-success-border: $brand-success;
+
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: $brand-warning;
+
+$btn-info-bg: $brand-info;
+$btn-info-border: $brand-info;
+
+$btn-default-color: #ffffff;
+$btn-default-bg: transparent;
+$btn-default-border: rgba(250, 250, 250, .33);
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg: $light-color;
+//** `<input>` border color
+$input-border: #eeeeee;
+//** Border color for inputs on focus
+$input-border-focus: #eeeeee;

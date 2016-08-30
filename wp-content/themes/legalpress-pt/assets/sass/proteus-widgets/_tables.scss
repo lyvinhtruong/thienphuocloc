@@ -1,0 +1,49 @@
+/* Tables */
+.legalpress-table {
+	width: 100%;
+	max-width: 100%;
+
+	thead {
+		th {
+			background-color: $link-color;
+			padding: 19px 20px;
+			border-radius: 2px;
+			color: #ffffff;
+			border-right: 2px solid transparent;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid transparent;
+			background-clip: padding-box;
+
+			&:first-of-type {
+				background-color: transparent;
+			}
+
+			&:last-of-type {
+				border-right: 0;
+			}
+		}
+	}
+
+	tbody {
+		td {
+			background-color: #ffffff;
+			box-shadow: 0 0 0 1px #eeeeee inset;
+			padding: 19px 20px;
+			border-right: 2px solid transparent;
+			border-bottom: 1px solid transparent;
+			border-top: 1px solid transparent;
+			background-clip: padding-box;
+			border-radius: 2px;
+
+			&:first-of-type {
+				box-shadow: none;
+				background-color: #eeeeee;
+				font-weight: bold;
+			}
+
+			&:last-of-type {
+				border-right: 0;
+			}
+		}
+	}
+}
