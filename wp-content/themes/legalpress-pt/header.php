@@ -24,9 +24,9 @@
 		<?php if ( 'no' !== get_theme_mod( 'top_bar_visibility', 'yes' ) ) : ?>
 		<div class="top<?php echo 'hide_mobile' === get_theme_mod( 'top_bar_visibility', 'yes' ) ? '  hidden-xs  hidden-sm' : ''; ?>">
 			<div class="container">
-				<div class="top__tagline">
+				<!-- <div class="top__tagline">
 					<?php bloginfo( 'description' ); ?>
-				</div>
+				</div> -->
 				<div class="top__widgets">
 					<?php
 					if ( is_active_sidebar( 'top-widgets' ) ) {
