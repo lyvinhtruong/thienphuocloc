@@ -63,7 +63,7 @@ Text domain: legalpress-pt
 	Remove what is not necessary
 \*------------------------------------*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html { font-family: "Open Sans Regular", sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+html { font-family: OpenSans; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
 
@@ -167,7 +167,7 @@ td, th { padding: 0; }
 
 html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: "Open Sans Regular", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.57; color: #999999; background-color: #fff; }
+body { font-family: OpenSans, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.57; color: #999999; background-color: #fff; }
 
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 
@@ -195,7 +195,7 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 [role="button"] { cursor: pointer; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "Open Sans Bold", Georgia, "Times New Roman", Times, serif; font-weight: bold; line-height: 1.1; color: #45423d; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: OpenSans; font-weight: bold; line-height: 1.1; color: #45423d; }
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #777777; }
 
 h1, .h1, h2, .h2, h3, .h3 { margin-top: 21px; margin-bottom: 10.5px; }
